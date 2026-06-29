@@ -46,17 +46,17 @@ DistilBERT gave the best F1 score in my final comparison.
 - `_bert_confusion.png` - confusion matrix for the BERT model
 - `_bert_f1_ranking.png` - model comparison chart
 - `Twitter Sentiment Analysis Data Pipeline Architecture.drawio.png` - pipeline architecture diagram
-- `training.1600000.processed.noemoticon.csv.zip` - compressed Sentiment140 dataset file
 
 ## Note About Large Files
 
-Some local files are not included in this repository because they are larger than GitHub's normal upload limit:
+Some local files are not included in this repository because of GitHub upload/file size limits:
 
+- `training.1600000.processed.noemoticon.csv.zip`
 - `Twitter_Sentiment_Analysis.pbix`
 - `training.1600000.processed.noemoticon.parquet`
 - `training_1600000.parquet`
 
-The Parquet files can be recreated from the dataset during preprocessing. The Power BI file is kept separately because of its file size.
+The dataset can be downloaded again from the Sentiment140 source. The Parquet files can be recreated from the dataset during preprocessing. The Power BI file is kept separately because of its file size.
 
 ## Tools Used
 
