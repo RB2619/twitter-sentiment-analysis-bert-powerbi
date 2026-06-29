@@ -1,61 +1,64 @@
-# Twitter Sentiment Analysis with BERT and Power BI
+# Twitter Sentiment Analysis
 
-This project analyzes tweet sentiment using the Sentiment140 dataset. It includes data preparation, NLP preprocessing, machine-learning model comparison, BERT-based classification, visual evaluation, and a Power BI reporting workflow.
+I worked on this project to understand how tweets can be classified as positive or negative using different machine learning models. The dataset used here is Sentiment140, and the main goal was to compare traditional ML models with a BERT-based approach.
 
-## Project Highlights
+Along with the notebook work, I also prepared visual outputs and a Power BI reporting workflow so the project is easier to explain and present.
 
-- Cleaned and prepared Sentiment140 tweet data for NLP analysis.
-- Converted raw CSV data to Parquet for faster processing.
-- Built and compared multiple sentiment classifiers:
-  - Logistic Regression
-  - Random Forest
-  - XGBoost
-  - BERT / DistilBERT
-- Evaluated models using accuracy, precision, recall, F1 score, and confusion matrices.
-- Created a Power BI dashboard workflow for reporting.
-- Documented the full data pipeline architecture.
+## What I Did
 
-## Final Model Comparison
+- Loaded and cleaned the Sentiment140 tweet dataset.
+- Converted the raw CSV data into Parquet format while working locally, mainly to make repeated analysis faster.
+- Preprocessed tweet text for NLP tasks.
+- Trained and compared Logistic Regression, Random Forest, XGBoost, and DistilBERT.
+- Checked model performance using accuracy, precision, recall, F1 score, and confusion matrices.
+- Created charts for final model comparison.
+- Prepared a Power BI dashboard workflow and a simple pipeline architecture diagram.
+
+## Model Results
+
+DistilBERT gave the best F1 score in my final comparison.
 
 | Model | F1 Score |
 |---|---:|
-| BERT / DistilBERT | 0.8029 |
+| DistilBERT | 0.8029 |
 | Logistic Regression | 0.7708 |
 | XGBoost | 0.7573 |
 | Random Forest | 0.7066 |
 
-## BERT Confusion Matrix
+## Visuals
+
+### BERT Confusion Matrix
 
 ![BERT Confusion Matrix](_bert_confusion.png)
 
-## Final Model Ranking
+### Final F1 Score Comparison
 
 ![Final Model Comparison](_bert_f1_ranking.png)
 
-## Data Pipeline Architecture
+### Data Pipeline Architecture
 
 ![Twitter Sentiment Analysis Data Pipeline Architecture](Twitter%20Sentiment%20Analysis%20Data%20Pipeline%20Architecture.drawio.png)
 
-## Repository Files
+## Files in This Repository
 
-- `twitter_sentiment_project.ipynb` - Main Jupyter notebook for data cleaning, preprocessing, model training, and evaluation.
-- `Final Documentation.pdf` - Final project documentation.
-- `_bert_confusion.png` - BERT confusion matrix visualization.
-- `_bert_f1_ranking.png` - Final model comparison chart.
-- `Twitter Sentiment Analysis Data Pipeline Architecture.drawio.png` - Data pipeline architecture diagram.
-- `training.1600000.processed.noemoticon.csv.zip` - Compressed Sentiment140 dataset file, included because it is under GitHub's 100 MB file limit.
+- `twitter_sentiment_project.ipynb` - main notebook for cleaning, preprocessing, modeling, and evaluation
+- `Final Documentation.pdf` - final project documentation
+- `_bert_confusion.png` - confusion matrix for the BERT model
+- `_bert_f1_ranking.png` - model comparison chart
+- `Twitter Sentiment Analysis Data Pipeline Architecture.drawio.png` - pipeline architecture diagram
+- `training.1600000.processed.noemoticon.csv.zip` - compressed Sentiment140 dataset file
 
-## Large Files Not Included
+## Note About Large Files
 
-The following local files were not uploaded because they are larger than GitHub's normal 100 MB file limit:
+Some local files are not included in this repository because they are larger than GitHub's normal upload limit:
 
 - `Twitter_Sentiment_Analysis.pbix`
 - `training.1600000.processed.noemoticon.parquet`
 - `training_1600000.parquet`
 
-These files can be regenerated from the notebook or stored separately using Git LFS, cloud storage, or Power BI workspace export if needed.
+The Parquet files can be recreated from the dataset during preprocessing. The Power BI file is kept separately because of its file size.
 
-## Tools and Libraries
+## Tools Used
 
 - Python
 - Pandas
@@ -64,12 +67,12 @@ These files can be regenerated from the notebook or stored separately using Git 
 - Seaborn
 - scikit-learn
 - XGBoost
-- Transformers / DistilBERT
+- DistilBERT
 - Power BI
 
 ## Dataset
 
-This project uses the Sentiment140 dataset, which contains labeled tweets for sentiment classification. The original dataset labels negative tweets as `0` and positive tweets as `4`.
+This project uses the Sentiment140 dataset. In this dataset, negative tweets are labeled as `0` and positive tweets are labeled as `4`.
 
 ## Author
 
