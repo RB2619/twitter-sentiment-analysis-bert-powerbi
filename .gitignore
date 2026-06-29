@@ -1,0 +1,16 @@
+# Large local artifacts excluded from normal GitHub upload
+*.pbix
+*.parquet
+
+# Extracted/raw dataset folders
+training.1600000.processed.noemoticon.csv/
+
+# Python/Jupyter generated files
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Local environment files
+.env
+venv/
+.venv/
